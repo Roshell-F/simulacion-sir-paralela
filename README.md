@@ -5,7 +5,6 @@
 **Asignatura:** Programación Paralela
 **Instituto:** ITLA
 
----
 
 ## Introducción
 
@@ -18,8 +17,6 @@ Se desarrollaron tres versiones del sistema:
  Versión paralela optimizada
 
 El objetivo es comparar el rendimiento y demostrar el impacto del paralelismo en problemas de gran escala.
-
----
 
 ## Objetivos
 
@@ -36,7 +33,6 @@ Implementar y comparar una simulación del modelo SIR utilizando enfoques secuen
  Calcular el speedup
  Optimizar la versión paralela
 
----
 
 ## Modelo SIR
 
@@ -59,7 +55,6 @@ Cada celda representa una persona:
  Puede recuperarse con cierta probabilidad
  La simulación evoluciona día a día
 
----
 
 ## Metodología
 
@@ -69,7 +64,6 @@ Cada celda representa una persona:
  Procesamiento celda por celda
  No utiliza múltiples núcleos
 
----
 
 ### Versión Paralela (OpenMP)
 
@@ -81,7 +75,6 @@ Se utiliza la directiva:
 
 Esto permite dividir el trabajo entre varios hilos.
 
----
 
 ### Versión Paralela Optimizada
 
@@ -93,7 +86,6 @@ Se realizaron mejoras clave:
 * Reducción de operaciones de impresión
 * Control manual del número de hilos
 
----
 
 ## Tecnologías utilizadas
 
@@ -102,7 +94,6 @@ Se realizaron mejoras clave:
 * Librería: OpenMP
 * Entorno: Visual Studio Code / CMD
 
----
 
 ## Estructura del Proyecto
 
@@ -117,7 +108,6 @@ proyecto/
 │   └── sir_paralelo_optimizado.cpp
 ```
 
----
 
 ## Compilación y Ejecución
 
@@ -128,7 +118,6 @@ g++ sir_secuencial.cpp -o sir.exe
 .\sir.exe
 ```
 
----
 
 ### Paralelo básico
 
@@ -137,8 +126,6 @@ C:\winlibs\mingw64\bin\g++ -fopenmp sir_paralelo.cpp -o sir_paralelo.exe -mconso
 .\sir_paralelo.exe
 ```
 
----
-
 ### Paralelo optimizado
 
 ```id="p8x1n6"
@@ -146,7 +133,6 @@ C:\winlibs\mingw64\bin\g++ -fopenmp sir_paralelo_optimizado.cpp -o sir_opt.exe -
 .\sir_opt.exe
 ```
 
----
 
 ## Resultados Experimentales
 
@@ -156,7 +142,6 @@ C:\winlibs\mingw64\bin\g++ -fopenmp sir_paralelo_optimizado.cpp -o sir_opt.exe -
 Tiempo total secuencial: 0.25844 segundos
 ```
 
----
 
 ### Versión Paralela (OpenMP)
 
@@ -164,7 +149,6 @@ Tiempo total secuencial: 0.25844 segundos
 Tiempo total paralelo: 0.404166 segundos
 ```
 
----
 
 ## Comparación de Resultados
 
@@ -174,7 +158,6 @@ Tiempo total paralelo: 0.404166 segundos
 | Rendimiento         | Mejor      | Menor             |
 | Uso de CPU          | 1 núcleo   | Múltiples núcleos |
 
----
 
 ## Cálculo de Speedup
 
@@ -183,7 +166,6 @@ Speedup = Tiempo_secuencial / Tiempo_paralelo
 Speedup = 0.25844 / 0.404166 ≈ 0.64
 ```
 
----
 
 ## Análisis
 
@@ -198,7 +180,6 @@ Esto se debe a:
 
 Sin embargo, tras aplicar optimizaciones, se espera una mejora en el rendimiento.
 
----
 
 ## Optimización del Paralelismo
 
@@ -211,7 +192,6 @@ Se implementó una versión optimizada con mejoras en:
 
 Estas mejoras permiten un mejor aprovechamiento del paralelismo.
 
----
 
 ## Conclusión
 
@@ -219,7 +199,6 @@ El proyecto demuestra que el paralelismo no siempre garantiza mejoras inmediatas
 
 El uso de OpenMP representa una herramienta poderosa para acelerar simulaciones complejas en grandes volúmenes de datos.
 
----
 
 ## Capturas
 
@@ -244,7 +223,6 @@ Ejemplo:
 Tiempo total secuencial: 0.25844 segundos
 Tiempo total paralelo: 0.404166 segundos
 
----
 
 ## Estado del Proyecto
 
